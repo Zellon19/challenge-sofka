@@ -1,0 +1,17 @@
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\bin\Debug\net6.0-windows\challenge-sofka.exe
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\bin\Debug\net6.0-windows\challenge-sofka.deps.json
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\bin\Debug\net6.0-windows\challenge-sofka.runtimeconfig.json
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\bin\Debug\net6.0-windows\challenge-sofka.dll
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\bin\Debug\net6.0-windows\challenge-sofka.pdb
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.csproj.AssemblyReference.cache
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge_sofka.Form1.resources
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.csproj.GenerateResource.cache
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.AssemblyInfoInputs.cache
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.AssemblyInfo.cs
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.csproj.CoreCompileInputs.cache
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.dll
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\refint\challenge-sofka.dll
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.pdb
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.genruntimeconfig.cache
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\ref\challenge-sofka.dll

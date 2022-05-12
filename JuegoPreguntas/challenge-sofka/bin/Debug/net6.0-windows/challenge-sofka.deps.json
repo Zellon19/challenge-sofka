@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "challenge-sofka/1.0.0": {
+        "runtime": {
+          "challenge-sofka.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "challenge-sofka/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
