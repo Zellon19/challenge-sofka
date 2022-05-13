@@ -55,32 +55,19 @@ namespace challenge_sofka.back
         }
 
         // aplicamos divide y venceras 5 veces, encontrando la pregunta mas rapido
-        public List<Pregunta> SeleccionarPreguntas()
+        public List<Pregunta> SeleccionarPreguntas(Categoria pCategoria)
         {
             List<Pregunta> lista = new();
-            for (int x = 0; x < 5; x++)
+            foreach(var pregunta in _listaPreguntas)
             {
-                int pPreguntaId = 1;
-                int posicion = _listaPreguntas.Count / 2;
-
-                if (_listaPreguntas[posicion].Id > pPreguntaId)
+                if (pregunta.CategoriaV == pCategoria)
                 {
-                    for (int i = posicion; i < _listaPreguntas.Count; i++)
-                    {
-                        if (_listaPreguntas[i].Id == pPreguntaId)
-                            lista.Add(_listaPreguntas[i]);
-                        continue;
-                    }
-                }
-
-                if (_listaPreguntas.Count / 2 < pPreguntaId)
-                {
-                    for (int i = 0; i < posicion; i++)
-                    {
-                        if (_listaPreguntas[i].Id == pPreguntaId)
-                            lista.Add(_listaPreguntas[i]);
-                        continue;
-                    }
+                    List<int> idsUsadas = new List<int>();
+                    int max = pCategoria.Preguntas.Count;
+                    var random = RandomNumberGenerator.GetInt32(1, max);
+                    idsUsadas.Add(random);
+                    lista.Add(pregunta);
+                    continue;
                 }
             }
             return lista;
