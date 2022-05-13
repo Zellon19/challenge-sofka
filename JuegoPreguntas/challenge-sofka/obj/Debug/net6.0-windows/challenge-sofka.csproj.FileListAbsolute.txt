@@ -15,3 +15,4 @@ C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPregunta
 C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.pdb
 C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge-sofka.genruntimeconfig.cache
 C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\ref\challenge-sofka.dll
+C:\Users\axela\OneDrive\Escritorio\juego preguntas\challenge-sofka\JuegoPreguntas\challenge-sofka\obj\Debug\net6.0-windows\challenge_sofka.front.frmConfiguracion.resources

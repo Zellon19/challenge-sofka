@@ -18,7 +18,5 @@ namespace challenge_sofka.back
         public List<Pregunta> Preguntas { get { return _preguntas; } }
         public int RecompensaTotal { get { return _recompensaTotal; } set { _recompensaTotal = value; } }
 
-
-
     }
 }
