@@ -12,10 +12,10 @@ namespace challenge_sofka.back
         private int _id;
         private Categoria _categoria;
         private Dificultad _dificultad;
-        private List<Respuesta> _respuestas = new();
+        private static List<Respuesta> _respuestas = new();
         private int _recompensa;
 
-        private List<Pregunta> _listaPreguntas;
+        private static List<Pregunta> _listaPreguntas = new();
 
         public int Id { get { return _id; } set { _id = value; } }
         public Categoria CategoriaV { get { return _categoria; } set { _categoria = value; } }
@@ -75,6 +75,14 @@ namespace challenge_sofka.back
             CategoriaV = categoria;
             Dificultad = dificultad;
             Respuestas = respuestas;
+            Recompensa = recompensa;
+        }
+
+        public Pregunta(int pId, Categoria categoria, Dificultad dificultad, int recompensa)
+        {
+            Id = pId;
+            CategoriaV = categoria;
+            Dificultad = dificultad;
             Recompensa = recompensa;
         }
     }

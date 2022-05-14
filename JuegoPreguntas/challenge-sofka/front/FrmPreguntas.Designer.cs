@@ -34,14 +34,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRespuestaDos = new System.Windows.Forms.TextBox();
+            this.txtRespuestaCuatro = new System.Windows.Forms.TextBox();
+            this.txtRespuestaUno = new System.Windows.Forms.TextBox();
+            this.txtRespuestaTres = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rdbRespuestaCuatro = new System.Windows.Forms.RadioButton();
             this.rdbRespuestaTres = new System.Windows.Forms.RadioButton();
-            this.rdbRespuesta2 = new System.Windows.Forms.RadioButton();
+            this.rdbRespuestaDos = new System.Windows.Forms.RadioButton();
             this.rdbRespuestaUno = new System.Windows.Forms.RadioButton();
             this.txtPregunta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -111,33 +111,34 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "1";
             // 
-            // textBox5
+            // txtRespuestaDos
             // 
-            this.textBox5.Location = new System.Drawing.Point(172, 206);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(266, 23);
-            this.textBox5.TabIndex = 29;
+            this.txtRespuestaDos.Location = new System.Drawing.Point(172, 206);
+            this.txtRespuestaDos.Name = "txtRespuestaDos";
+            this.txtRespuestaDos.Size = new System.Drawing.Size(266, 23);
+            this.txtRespuestaDos.TabIndex = 29;
+            this.txtRespuestaDos.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox4
+            // txtRespuestaCuatro
             // 
-            this.textBox4.Location = new System.Drawing.Point(172, 264);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(266, 23);
-            this.textBox4.TabIndex = 28;
+            this.txtRespuestaCuatro.Location = new System.Drawing.Point(172, 264);
+            this.txtRespuestaCuatro.Name = "txtRespuestaCuatro";
+            this.txtRespuestaCuatro.Size = new System.Drawing.Size(266, 23);
+            this.txtRespuestaCuatro.TabIndex = 28;
             // 
-            // textBox3
+            // txtRespuestaUno
             // 
-            this.textBox3.Location = new System.Drawing.Point(172, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(266, 23);
-            this.textBox3.TabIndex = 27;
+            this.txtRespuestaUno.Location = new System.Drawing.Point(172, 177);
+            this.txtRespuestaUno.Name = "txtRespuestaUno";
+            this.txtRespuestaUno.Size = new System.Drawing.Size(266, 23);
+            this.txtRespuestaUno.TabIndex = 27;
             // 
-            // textBox1
+            // txtRespuestaTres
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 235);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 23);
-            this.textBox1.TabIndex = 26;
+            this.txtRespuestaTres.Location = new System.Drawing.Point(172, 235);
+            this.txtRespuestaTres.Name = "txtRespuestaTres";
+            this.txtRespuestaTres.Size = new System.Drawing.Size(266, 23);
+            this.txtRespuestaTres.TabIndex = 26;
             // 
             // label2
             // 
@@ -170,16 +171,16 @@
             this.rdbRespuestaTres.Text = "Respuesta 3";
             this.rdbRespuestaTres.UseVisualStyleBackColor = true;
             // 
-            // rdbRespuesta2
+            // rdbRespuestaDos
             // 
-            this.rdbRespuesta2.AutoSize = true;
-            this.rdbRespuesta2.Location = new System.Drawing.Point(4, 206);
-            this.rdbRespuesta2.Name = "rdbRespuesta2";
-            this.rdbRespuesta2.Size = new System.Drawing.Size(87, 19);
-            this.rdbRespuesta2.TabIndex = 22;
-            this.rdbRespuesta2.TabStop = true;
-            this.rdbRespuesta2.Text = "Respuesta 2";
-            this.rdbRespuesta2.UseVisualStyleBackColor = true;
+            this.rdbRespuestaDos.AutoSize = true;
+            this.rdbRespuestaDos.Location = new System.Drawing.Point(4, 206);
+            this.rdbRespuestaDos.Name = "rdbRespuestaDos";
+            this.rdbRespuestaDos.Size = new System.Drawing.Size(87, 19);
+            this.rdbRespuestaDos.TabIndex = 22;
+            this.rdbRespuestaDos.TabStop = true;
+            this.rdbRespuestaDos.Text = "Respuesta 2";
+            this.rdbRespuestaDos.UseVisualStyleBackColor = true;
             // 
             // rdbRespuestaUno
             // 
@@ -295,14 +296,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRespuestaDos);
+            this.Controls.Add(this.txtRespuestaCuatro);
+            this.Controls.Add(this.txtRespuestaUno);
+            this.Controls.Add(this.txtRespuestaTres);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.rdbRespuestaCuatro);
             this.Controls.Add(this.rdbRespuestaTres);
-            this.Controls.Add(this.rdbRespuesta2);
+            this.Controls.Add(this.rdbRespuestaDos);
             this.Controls.Add(this.rdbRespuestaUno);
             this.Controls.Add(this.txtPregunta);
             this.Controls.Add(this.label1);
@@ -322,14 +323,14 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox1;
+        private TextBox txtRespuestaDos;
+        private TextBox txtRespuestaCuatro;
+        private TextBox txtRespuestaUno;
+        private TextBox txtRespuestaTres;
         private Label label2;
         private RadioButton rdbRespuestaCuatro;
         private RadioButton rdbRespuestaTres;
-        private RadioButton rdbRespuesta2;
+        private RadioButton rdbRespuestaDos;
         private RadioButton rdbRespuestaUno;
         private TextBox txtPregunta;
         private Label label1;

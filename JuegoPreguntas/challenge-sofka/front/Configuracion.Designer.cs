@@ -46,9 +46,9 @@
             // 
             // btnAniadirPregunta
             // 
-            this.btnAniadirPregunta.Location = new System.Drawing.Point(54, 145);
+            this.btnAniadirPregunta.Location = new System.Drawing.Point(12, 120);
             this.btnAniadirPregunta.Name = "btnAniadirPregunta";
-            this.btnAniadirPregunta.Size = new System.Drawing.Size(176, 51);
+            this.btnAniadirPregunta.Size = new System.Drawing.Size(193, 51);
             this.btnAniadirPregunta.TabIndex = 1;
             this.btnAniadirPregunta.Text = "Añadir pregunta";
             this.btnAniadirPregunta.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // 
             // btnAniadirDificultad
             // 
-            this.btnAniadirDificultad.Location = new System.Drawing.Point(54, 259);
+            this.btnAniadirDificultad.Location = new System.Drawing.Point(12, 234);
             this.btnAniadirDificultad.Name = "btnAniadirDificultad";
-            this.btnAniadirDificultad.Size = new System.Drawing.Size(176, 51);
+            this.btnAniadirDificultad.Size = new System.Drawing.Size(193, 51);
             this.btnAniadirDificultad.TabIndex = 2;
             this.btnAniadirDificultad.Text = "Añadir Dificultad";
             this.btnAniadirDificultad.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // btnAniadirCategoria
             // 
-            this.btnAniadirCategoria.Location = new System.Drawing.Point(54, 202);
+            this.btnAniadirCategoria.Location = new System.Drawing.Point(12, 177);
             this.btnAniadirCategoria.Name = "btnAniadirCategoria";
-            this.btnAniadirCategoria.Size = new System.Drawing.Size(176, 51);
+            this.btnAniadirCategoria.Size = new System.Drawing.Size(193, 51);
             this.btnAniadirCategoria.TabIndex = 3;
             this.btnAniadirCategoria.Text = "Añadir categoría";
             this.btnAniadirCategoria.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(756, 414);
+            this.ClientSize = new System.Drawing.Size(215, 302);
             this.ControlBox = false;
             this.Controls.Add(this.btnAniadirCategoria);
             this.Controls.Add(this.btnAniadirDificultad);

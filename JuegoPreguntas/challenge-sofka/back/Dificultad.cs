@@ -55,6 +55,11 @@ namespace challenge_sofka.back
 
         }
 
+        public Dificultad(int pId)
+        {
+            Id = pId;
+        }
+
         public Dificultad(int pId, string pNombre)
         {
             Id = pId;

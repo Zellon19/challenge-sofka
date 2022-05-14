@@ -15,7 +15,7 @@ namespace challenge_sofka.back
 
         public List<Respuesta> ListaRespuestas { get { return _respuestas; } }
         public int Id { get { return _id; } set { _id = value; } }
-        public Pregunta Pregunta { get { return _pregunta; } }
+        public Pregunta PreguntaV { get { return _pregunta; } set { _pregunta = value; } }
         public bool Correcta { get { return _correcta; } set { _correcta = value; } }
 
         public Respuesta? BuscarRespuesta(Respuesta pRespuesta)
@@ -39,15 +39,26 @@ namespace challenge_sofka.back
 
         public bool AgregarRespuesta(Respuesta pRespuesta)
         {
-            if (pRespuesta == null || pRespuesta.Pregunta == null) return false;
+            if (pRespuesta == null || pRespuesta.PreguntaV == null) return false;
 
             if(BuscarRespuesta(pRespuesta) == null)
             {
-                pRespuesta.Pregunta.Respuestas.Add(pRespuesta);
+                pRespuesta.PreguntaV.Respuestas.Add(pRespuesta);
                 _respuestas.Add(pRespuesta);
                 return true;
             }
             return false;
+        }
+
+        public Respuesta()
+        {
+
+        }
+        public Respuesta(int pId, Pregunta pPregunta, bool pCorrecta)
+        {
+            Id = pId;
+            PreguntaV = pPregunta;
+            Correcta = pCorrecta;
         }
 
     }

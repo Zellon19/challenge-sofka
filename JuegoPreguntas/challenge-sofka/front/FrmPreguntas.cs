@@ -49,9 +49,37 @@ namespace challenge_sofka.front
 
         private bool FaltanDatos()
         {
-            if (string.IsNullOrEmpty(this.txtPregunta.Text) || (!this.rdbRespuesta2.Checked &&
-                !this.rdbRespuestaCuatro.Checked && !this.rdbRespuestaTres.Checked && !this.rdbRespuestaUno.Checked))
+            bool mostrar = false;
+            string mensaje = "Falta";
+            if (string.IsNullOrWhiteSpace(this.txtPregunta.Text)){
+                mensaje += " la pregunta,";
+                mostrar = true;
+            }
+            if (string.IsNullOrWhiteSpace(this.txtIdPregunta.Text))
+            {
+                mensaje += " la id,";
+                mostrar = true;
+            }
+            if(!this.rdbRespuestaDos.Checked && !this.rdbRespuestaCuatro.Checked &&
+                !this.rdbRespuestaTres.Checked && !this.rdbRespuestaUno.Checked)
+            {
+                mensaje += " seleccionar la respuesta correcta,";
+                mostrar = true;
+            }
+            if(string.IsNullOrWhiteSpace(this.txtRespuestaUno.Text) || string.IsNullOrEmpty(this.txtRespuestaDos.Text) ||
+                string.IsNullOrWhiteSpace(this.txtRespuestaTres.Text) || string.IsNullOrEmpty(this.txtRespuestaCuatro.Text))
+            {
+                mensaje += " una o mas respuestas";
+                mostrar = true;
+            }
+
+            if (mostrar)
+            {
+                mensaje += ".";
+                MessageBox.Show(mensaje, "Error");
                 return true;
+            }
+
 
             return false;
         }
@@ -68,16 +96,28 @@ namespace challenge_sofka.front
                         MessageBox.Show("La id no puede ser menor a 1 ni contener letras!");
                         return;
                     }
-                    string mPregunta = this.txtPregunta.Text;
-                    var mDificultad = this.cboDificultad.SelectedItem;
-                    var mCategoria = this.cboCategoria.SelectedItem;
-                    
+                    var mPregunta = this.txtPregunta.Text;
+                    var mDificultad = this.cboDificultad.SelectedValue.ToString()[0].ToString();
+                    var mCategoria = this.cboCategoria.SelectedValue.ToString()[0].ToString();
+                    var mRespuestaUno = this.txtRespuestaUno.Text;
+                    var mRespuestaDos = this.txtRespuestaDos.Text;
+                    var mRespuestaTres = this.txtRespuestaTres.Text;
+                    var mRespuestaCuatro = this.txtRespuestaCuatro.Text;
+                    Respuesta res = new();
+                    Categoria categoria = new Categoria().BuscarCategoria(new Categoria(int.Parse(mCategoria)));
+                    Dificultad dificultad = new Dificultad().BuscarDificultad(new Dificultad(int.Parse(mDificultad)));
+                    Pregunta pregunta = new(result, categoria, dificultad, 0);
                 }
                 catch (Exception)
                 {
                     throw new Exception();
                 }
             }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
