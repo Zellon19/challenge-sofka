@@ -47,6 +47,8 @@
             this.lblAcumuladoSesionActual = new System.Windows.Forms.Label();
             this.btnConfigurarJuego = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.lblJugador = new System.Windows.Forms.Label();
+            this.lblJugadorActualNombre = new System.Windows.Forms.Label();
             this.grpInputInicial.SuspendLayout();
             this.grpPreguntas.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +102,8 @@
             // 
             // grpPreguntas
             // 
+            this.grpPreguntas.Controls.Add(this.lblJugadorActualNombre);
+            this.grpPreguntas.Controls.Add(this.lblJugador);
             this.grpPreguntas.Controls.Add(this.lblRespuestaCorrectaIncorrecta);
             this.grpPreguntas.Controls.Add(this.btnRetirarseConLoObtenido);
             this.grpPreguntas.Controls.Add(this.btnConfirmarRespuesta);
@@ -250,6 +254,24 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // lblJugador
+            // 
+            this.lblJugador.AutoSize = true;
+            this.lblJugador.Location = new System.Drawing.Point(24, 41);
+            this.lblJugador.Name = "lblJugador";
+            this.lblJugador.Size = new System.Drawing.Size(87, 15);
+            this.lblJugador.TabIndex = 11;
+            this.lblJugador.Text = "Jugador actual:";
+            // 
+            // lblJugadorActualNombre
+            // 
+            this.lblJugadorActualNombre.AutoSize = true;
+            this.lblJugadorActualNombre.Location = new System.Drawing.Point(117, 41);
+            this.lblJugadorActualNombre.Name = "lblJugadorActualNombre";
+            this.lblJugadorActualNombre.Size = new System.Drawing.Size(59, 15);
+            this.lblJugadorActualNombre.TabIndex = 12;
+            this.lblJugadorActualNombre.Text = "-nombre-";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -291,5 +313,7 @@
         private Label lblRespuestaCorrectaIncorrecta;
         private Button btnConfigurarJuego;
         private Button btnSalir;
+        private Label lblJugadorActualNombre;
+        private Label lblJugador;
     }
 }

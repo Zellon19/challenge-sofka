@@ -12,27 +12,12 @@ namespace challenge_sofka.back
         private string _nombre;
         private static List<Pregunta> _preguntas = new();
 
-        private List<Categoria> _listaCategorias = new();
+        private static List<Categoria> _listaCategorias = new();
         public List<Categoria> ListaCategorias { get { return _listaCategorias; } }
 
         public int Id { get { return _id; } set { _id = value; } }
         public string Nombre { get { return _nombre; } set { _nombre = value; } }
         public List<Pregunta> Preguntas { get { return _preguntas; } }
-
-        public Categoria()
-        {
-
-        }
-        public Categoria(int pId, string pNombre, List<Pregunta> pPreguntas)
-        {
-            Id = pId;
-            Nombre = pNombre;
-            _preguntas = pPreguntas;
-        }
-        public Categoria(int pId)
-        {
-            Id = pId;
-        }
 
         public Categoria? BuscarCategoria(Categoria pCategoria)
         {
@@ -71,13 +56,35 @@ namespace challenge_sofka.back
         {
             if (pCategoria == null || pPregunta == null) return false;
 
-            // chequeamos que existan en la bd
+            //chequeamos si existe
             if (BuscarCategoria(pCategoria) == null || pPregunta.BuscarPregunta(pPregunta) == null)
                 return false;
 
             _preguntas.Add(pPregunta);
             return true;
 
+        }
+
+        public Categoria()
+        {
+
+        }
+
+        public Categoria(int pId, string pNombre)
+        {
+            Id = pId;
+            Nombre = pNombre;
+        }
+
+        public Categoria(int pId, string pNombre, List<Pregunta> pPreguntas)
+        {
+            Id = pId;
+            Nombre = pNombre;
+            _preguntas = pPreguntas;
+        }
+        public Categoria(int pId)
+        {
+            Id = pId;
         }
 
     }

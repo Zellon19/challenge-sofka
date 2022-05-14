@@ -23,5 +23,26 @@ namespace challenge_sofka.front
             Form1 frm = new();
             frm.Show();
         }
+
+        private void btnAniadirPregunta_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmPreguntas frm = new();
+            frm.Show();
+        }
+
+        private void btnAniadirCategoria_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCategorias frm = new();
+            frm.Show();
+        }
+
+        private void btnAniadirDificultad_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmDificultades frm = new();
+            frm.Show();
+        }
     }
 }

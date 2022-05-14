@@ -16,6 +16,8 @@ namespace challenge_sofka.back
         public int Id { get { return _id; } set { _id = value; } }
         public string Nombre { get { return _nombre; } set { _nombre = value; } }
         public List<Pregunta> ListaPreguntas { get { return _listaPreguntas; } }
+        public List<Dificultad> ListaDificultades {  get { return _dificultades; } }
+
 
         public Dificultad? BuscarDificultad(Dificultad pDificultad)
         {
@@ -36,7 +38,7 @@ namespace challenge_sofka.back
             }
         }
 
-        public bool AltaDificultad(Dificultad pDificultad)
+        public bool AgregarDificultad(Dificultad pDificultad)
         {
             if (pDificultad == null) return false;
 
@@ -47,5 +49,17 @@ namespace challenge_sofka.back
             }
             return false;
         }
+
+        public Dificultad()
+        {
+
+        }
+
+        public Dificultad(int pId, string pNombre)
+        {
+            Id = pId;
+            Nombre = pNombre;
+        }
+
     }
 }

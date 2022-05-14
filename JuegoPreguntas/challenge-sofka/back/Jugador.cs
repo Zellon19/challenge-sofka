@@ -43,12 +43,20 @@ namespace challenge_sofka.back
         {
             if (pJugador == null) return false;
 
-            if(BuscarJugador(pJugador) != null)
+            if(BuscarJugador(pJugador) == null)
             {
                 _jugadores.Add(pJugador);
                 return true;
             }
             return false;
         }
+
+        public Jugador(int pId, string pNombre)
+        {
+            Id = pId;
+            Nombre = pNombre;
+            TotalGanado = 0;
+        }
+
     }
 }

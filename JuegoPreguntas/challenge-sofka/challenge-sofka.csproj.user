@@ -7,5 +7,14 @@
     <Compile Update="front\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="front\FrmCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="front\FrmDificultades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="front\FrmPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
